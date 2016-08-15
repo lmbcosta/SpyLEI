@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+	<top>
+		<MenuBar BorderPane.alignment="CENTER">
+			<menus>
+				<Menu mnemonicParsing="false" text="Menu">
+					<items>
+						<MenuItem mnemonicParsing="false" onAction="#createAgent" text="Criar Agente" />
+						<MenuItem mnemonicParsing="false" onAction="#addDocumentToAgent" text="Adicionar Documento para Agente" />
+						<MenuItem mnemonicParsing="false" onAction="#readDocumentFromAgent" text="Ler Documento de Agente" />
+						<MenuItem mnemonicParsing="false" onAction="#unavailableAgent" text="Registar Indisponibilidade de Agente" />
+						<MenuItem mnemonicParsing="false" onAction="#readAgentInfo" text="Procurar Informação de Agente" />
+						<MenuItem mnemonicParsing="false" onAction="#createMission" text="Criar Missão" />
+						<MenuItem mnemonicParsing="false" onAction="#readMissionInfo" text="Procurar Informação de Missão" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#logout" text="Sair" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+	</top>
+</BorderPane>

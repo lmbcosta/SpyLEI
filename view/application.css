@@ -1,0 +1,31 @@
+.form-title {
+	-fx-font-size: 25;
+	-fx-font-weight: bold;
+}
+
+.form-key {
+	-fx-font-weight: bold;
+}
+
+
+.error-message {
+	-fx-text-fill: red;
+}
+
+.category {
+	-fx-border-width: 2;
+	-fx-border-color: #0000ff;
+	-fx-background-color: #0000ff;
+	-fx-text-fill: white;
+	-fx-border-radius: 5 5 5 5;
+    -fx-background-radius: 5 5 5 5;	
+}
+
+.indicator {
+	-fx-border-width: 2;
+	-fx-border-color: cyan;
+	-fx-background-color: cyan;
+	-fx-text-fill: black;
+	-fx-border-radius: 5 5 5 5;
+    -fx-background-radius: 5 5 5 5;
+}

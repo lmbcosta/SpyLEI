@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="248.0" prefWidth="483.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SetUnavailabilityController">
+   <children>
+      <Label layoutX="10.0" layoutY="10.0" styleClass="form-title" stylesheets="@application.css" text="Indisponibilidade de Agente" />
+      <GridPane layoutX="20.0" layoutY="56.0" prefHeight="174.0" prefWidth="463.0">
+         <children>
+            <GridPane prefHeight="142.0" prefWidth="458.0" GridPane.columnSpan="2147483647">
+               <children>
+                  <Label text="Código:" GridPane.halignment="RIGHT" />
+                  <TextField fx:id="codenameField" onAction="#setAvailability" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" styleClass="form-key" text="Chave de acesso:" textAlignment="RIGHT" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+                  <TextField fx:id="accessKeyField" onAction="#setAvailability" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" styleClass="form-key" text="Nova disponibilidade:" textAlignment="RIGHT" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+                  <ComboBox fx:id="newAvailabilityField" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                  </ComboBox>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" styleClass="form-key" text="Disponibilidade atual:" textAlignment="RIGHT" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+                  <Label fx:id="currentAvailabilityField" focusTraversable="false" prefHeight="16.0" prefWidth="307.0" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="139.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="448.0" minWidth="10.0" prefWidth="319.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints maxHeight="44.0" minHeight="36.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="35.0" minHeight="0.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="46.0" minHeight="23.0" prefHeight="26.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <FlowPane alignment="CENTER_RIGHT" prefHeight="85.0" prefWidth="318.0" GridPane.rowIndex="1">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#cancel" text="Cancelar" />
+                  <Button mnemonicParsing="false" onAction="#change" text="Alterar">
+                     <FlowPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </FlowPane.margin>
+                  </Button>
+               </children>
+            </FlowPane>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="457.43365478515625" minWidth="10.0" prefWidth="439.7991638183594" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="216.0" minHeight="10.0" prefHeight="165.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="342.0" minHeight="-Infinity" prefHeight="9.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>
